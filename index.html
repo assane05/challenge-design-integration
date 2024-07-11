@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Challenge</title>
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav class="relative container mx-auto p-6">
+      <div class="flex items-center justify-between">
+        <div class="pt-2">
+          <span>Logo</span>
+        </div>
+        <div class="hidden space-x-6 md:flex">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact us</a>
+        </div>
+        <!-- button  -->
+        <a href="#">
+          <div
+            class="hidden p-3 px-6 pt-2 rounded-full baseline md:block border"
+          >
+            Login
+          </div>
+        </a>
+
+        <!-- menu responsive  -->
+        <button
+          id="menu-btn"
+          class="block humberger md:hidden focus:outline-none"
+        >
+          <span class="humberger-top"></span>
+          <span class="humberger-middle"></span>
+          <span class="humberger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile menu  -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#" class="hover:text-darkGrayishBlue">Home</a>
+          <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Contact us</a>
+        </div>
+      </div>
+    </nav>
+    <!-- SECTION  -->
+
+    <!-- box card content  -->
+    <div class="container mx-auto mb-10">
+      <!-- title section  -->
+      <h1 class="title-middle text-4xl font-bold text-center md:text-5xl mt-10">
+        Medicines, Cars, Dining, Electronics <br />Your All-in-One Solution!
+      </h1>
+      <!-- title section  -->
+
+      <!-- first box content  -->
+      <div class="flex items-center justify-center mt-20 container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 place-items-stretch">
+          <!-- first box card  -->
+          <div
+            class="rounded-xl bg-box-first space-y-3 flex flex-col items-center text-center p-6 h-full"
+          >
+            <img src="images/web_1.png" class="w-32 md:w-40" alt="Medicines" />
+            <h5 class="font-bold color-text-med">Medicines</h5>
+            <p>
+              Welcome to Heal Hub, where wellness <br />meets convenience on
+              your terms...
+            </p>
+            <div class="mt-auto">
+              <button
+                class="p-3 px-6 pt-2 text-white rounded-full bg-button-one shadow-2xl baseline mb-9"
+              >
+                Visit Page
+              </button>
+            </div>
+          </div>
+          <!-- end first box card  -->
+
+          <!-- second box  card-->
+          <div
+            class="rounded-xl bg-box-second space-y-3 flex flex-col items-center text-center p-6 h-full"
+          >
+            <img src="images/web_2.png" class="w-32 md:w-40" alt="Medicines" />
+            <h5 class="font-bold color-text-ease">Dine Ease</h5>
+            <p>
+              Dine Ease, ultimate and best destination, <br />Ease brings you
+              your favorite flavors...
+            </p>
+            <div class="mt-auto">
+              <button
+                class="p-3 px-6 pt-2 text-white rounded-full bg-button-two shadow-2xl baseline mb-9"
+              >
+                Visit Page
+              </button>
+            </div>
+          </div>
+          <!-- end second box card -->
+        </div>
+      </div>
+      <!-- end first box content  -->
+
+      <!-- second section  -->
+      <!-- first box content  -->
+      <div class="flex items-center justify-center mt-10 container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 place-items-stretch">
+          <!-- first box card  -->
+          <div
+            class="rounded-xl bg-box-three space-y-3 flex flex-col items-center text-center p-6 h-full"
+          >
+            <img src="images/web_3.png" class="w-32 md:w-40" alt="Medicines" />
+            <h5 class="font-bold color-text-cars">Find Cars</h5>
+            <p>
+              Dine Ease, ultimate and best destination, <br />Ease brings you
+              your favorite flavors...
+            </p>
+            <div class="mt-auto">
+              <button
+                class="p-3 px-6 pt-2 text-white rounded-full bg-button-three shadow-2xl baseline mb-9"
+              >
+                Visit Page
+              </button>
+            </div>
+          </div>
+          <!-- end first box card  -->
+
+          <!-- second box  card-->
+          <div
+            class="rounded-xl bg-box-four space-y-3 flex flex-col items-center text-center p-6 h-full"
+          >
+            <img src="images/web_4.png" class="w-32 md:w-40" alt="Medicines" />
+            <h5 class="font-bold color-text-ease">Electronics</h5>
+            <p>
+              Dine Ease, ultimate and best destination, <br />Ease brings you
+              your favorite flavors...
+            </p>
+            <div class="mt-auto">
+              <button
+                class="p-3 px-6 pt-2 text-white rounded-full bg-button-four shadow-2xl baseline mb-9"
+              >
+                Visit Page
+              </button>
+            </div>
+          </div>
+          <!-- end second box card -->
+        </div>
+      </div>
+      <!-- end first box content  -->
+    </div>
+    <!-- end box card content  -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

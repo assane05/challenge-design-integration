@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Poppins';
+    background: linear-gradient(180deg, #FAFAFA 0%, #FCFCFC 100%);
+}
+
+.title-middle{
+    color: #00203F;
+}
+.bg-box-first{
+    background: rgba(0, 224, 255, 0.24);
+}
+.bg-box-second{
+    background: rgba(255, 199, 0, 0.37);
+}
+.bg-box-three{
+    background: rgba(255, 122, 0, 0.47);
+}
+.bg-box-four{
+    background: rgba(66, 255, 0, 0.37);
+}
+
+/* button bg color  */
+.bg-button-one{
+    background: #00588A;
+}
+.bg-button-two{
+    background: rgba(102, 94, 64, 1);
+}
+.bg-button-four{
+    background: rgba(74, 102, 64, 1);
+}
+.bg-button-three{
+    background: rgba(102, 77, 54, 1);
+}
+
+/* text color title  */
+.color-text-med{
+    color: #00588A;
+    font-size: 28px;
+}
+.color-text-ease{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 28px;
+}
+.color-text-cars{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 28px;
+}
+
+
+
+/* menu humberger  */
+.humberger{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.humberger-top,
+.humberger-middle,
+.humberger-bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.humberger-middle{
+    transform: translateY(7px);
+}
+.humberger-bottom{
+    transform: translateY(14px);
+}
+
+.open{
+    transform:  rotate(90deg);
+    transform: translateY(0px);
+}
+.open .humberger-top{
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .humberger-middle{
+    display: none;
+}
+.open .humberger-bottom{
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
