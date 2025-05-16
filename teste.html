@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Hover</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        max-width: 350px;
+        padding: 20px;
+        cursor: pointer;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      .card h3 {
+        color: #024b90;
+        margin-top: 0;
+      }
+
+      .card p {
+        color: #555;
+      }
+
+      .card .quote {
+        font-style: italic;
+        color: #f83131;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h3>Amina K.</h3>
+      <p class="quote">"Une expérience incroyable avec YeConsulting !"</p>
+      <p>
+        Les formations sont très bien structurées, et l’équipe est toujours
+        présente pour répondre aux questions. Merci pour tout !
+      </p>
+    </div>
+  </body>
+</html>
